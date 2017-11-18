@@ -18,10 +18,10 @@ import java.util.concurrent.Executors;
  */
 public class AsyncCallback {
 
-    static String path = "/zk-book";
+    static String path = "/zk-book1";
     static CuratorFramework client = CuratorFrameworkFactory
             .builder()
-            .connectString("119.23.236.253")
+            .connectString("119.23.236.253:2181")
             .sessionTimeoutMs(5000)
             .retryPolicy(new ExponentialBackoffRetry(1000, 3))
             .build();
