@@ -16,7 +16,7 @@ import java.util.concurrent.Executors;
  * Date:2017/11/18
  * Curator异步回调
  */
-public class AsyncCallback {
+public class CuratorAsyncCallback {
 
     static String path = "/zk-book1";
     static CuratorFramework client = CuratorFrameworkFactory
