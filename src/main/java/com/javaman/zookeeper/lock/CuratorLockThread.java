@@ -51,7 +51,8 @@ public class CuratorLockThread {
             try {
                 System.out.println("我是第" + num + "号线程，我开始获取锁");
                 lock.acquire();
-                System.out.println("我是第" + num + "号线程，我已经获取锁");
+                System.out.println("我是第" + num + "号线程，我已经获取锁！！！！！！");
+                System.out.println("=============================================");
                 Thread.sleep(10000);
             } catch (Exception e) {
                 e.printStackTrace();
