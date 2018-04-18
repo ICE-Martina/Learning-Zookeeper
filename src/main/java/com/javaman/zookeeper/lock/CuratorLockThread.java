@@ -19,7 +19,7 @@ public class CuratorLockThread {
             JvmLock jl = new JvmLock(i);
             new Thread(jl).start();
             //这里加上300毫秒是为了让线程按顺序启动，不然有可能4号线程比3号线程先启动了，这样测试就不准了。
-            Thread.sleep(100);
+            Thread.sleep(1000);
         }
     }
 
